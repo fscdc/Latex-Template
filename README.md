@@ -1,5 +1,7 @@
 # Latex-Template
-中文latex模版，重构于CUMCM模版
+
+## Description
+中文latex模版，重构于[[CUMCM]](https://github.com/latexstudio/CUMCMThesis)模版。
 
 ## Use
 使用这个下面命令将本Repo拉取到本地，然后打包为`ZIP`文件格式，在[[OverLeaf]](https://www.overleaf.com/project)点击`New Project`后再点击`Upload Project`即可，编译器选择**XeLaTex**即可。
