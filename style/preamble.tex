@@ -1,0 +1,63 @@
+%'''
+\usepackage{amsmath}   % Package for math files
+\usepackage{txfonts}
+\usepackage{graphicx}  % Place figures
+\usepackage{caption}   % Place captions in tables and figures
+\usepackage{subcaption}% 
+\usepackage{placeins}  % \FloatBarrier so figures can't float beyond some point in text
+% \usepackage{fullpage}  % Uses more of the page
+\usepackage{float}     % Able to make figures and tables float
+%表格自动生成
+\usepackage{subfloat}
+\usepackage{subcaption} 
+\usepackage{subfiles}  
+\usepackage{hyperref} 
+ % Ability to click on references like equations, figures, sections etc. \ref{eq:my_eq} clickable
+\usepackage{placeins}  
+% \FloatBarrier so figures can't float beyond some point in text
+\usepackage[T1]{fontenc} 
+%英文字体定义
+\usepackage{setspace}
+
+\setstretch{1.0} % 将行间距设置为单倍行距
+\usepackage{titlesec}
+\titleformat{\section}[block]{\zihao{-4}\bfseries\setstretch{1.5}}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\zihao{-4}\bfseries\setstretch{1.5}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[block]{\zihao{-4}\bfseries\setstretch{1.5}}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[block]{\zihao{-4}\bfseries\setstretch{1.5}}{\theparagraph}{1em}{}
+
+%''' 
+
+\usepackage{titlesec}
+% 重定义章节段的行间距和字体
+\titleformat{\section}[block]{\zihao{-4}\bfseries\setstretch{1.5}}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\zihao{-4}\bfseries\setstretch{1.5}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[block]{\zihao{-4}\bfseries\setstretch{1.5}}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[block]{\zihao{-4}\bfseries\setstretch{1.5}}{\theparagraph}{1em}{}
+
+%'''
+% \renewcommand {\thetable} {\thechapter{}.\arabic{table}}
+% %表格根据章节自动命名
+% \renewcommand {\thefigure} {\thechapter{}.\arabic{figure}}
+% %图片根据章节自动命名
+
+\renewcommand {\thetable} {\arabic{table}}
+\renewcommand {\thefigure} {\arabic{figure}}
+
+% \numberwithin{figure}{section}
+% \numberwithin{table}{section}
+\numberwithin{equation}{section}
+%以上三个皆控制重命名
+\newcommand{\figref}[1]{\figurename~\ref{#1}} 
+% 定义正常字体就是五号字体
+\renewcommand{\normalsize}{\zihao{5}}
+%Nice reference to figures
+
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+}
+%'''
